@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGM Móveis</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h1{
+            font-family: 'Playfair Display', serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            background-color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .padding-top{
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 1000;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            transition: transform 0.6s ease;
+        }
+
+        .carousel-inner {
+            display: flex;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            width: 80%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            footer h3,
+            #sobre h3 {
+                margin-top: 20px;
+            }
+
+            .carousel-item img {
+            width: 100%;
+        }
+        }
+
+        @media (max-width: 992px) {
+            #sobre h3 {
+                margin-top: 20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-md">
+            <div class="container">
+                <h1>MGM Móveis</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse  justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#etapas">Etapas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="galeria" class="mt-10">
+            <div class="padding-top">
+                <h2 class="text-center mb-4">Algumas fotos de nossos trabalhos:</h2>
+                <div class="d-flex justify-content-center">
+                    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div data-bs-interval="3000" class="carousel-item d-block w-10   active">
+                                <img src="galeria/armario  e comoda madeira.jpg">
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item d-block w-10  ">
+                                <img src="galeria/armario vazio divisorias quarto.jpg">
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item d-block w-10  ">
+                                <img src="galeria/closet branco.jpg">
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item d-block w-10  ">
+                                <img src="galeria/closet vazio.jpg">
+                            </div>
+                            <div data-bs-interval="3000" class="carousel-item d-block w-10  ">
+                                <img src="galeria/comoda madeira.jpg">
+                            </div>
+                        </div>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#carousel-exemplo" type="button" data-bs-slide-to="0" class="active"></button>
+                            <button data-bs-target="#carousel-exemplo" type="button" data-bs-slide-to="1"></button>
+                            <button data-bs-target="#carousel-exemplo" type="button" data-bs-slide-to="2"></button>
+                            <button data-bs-target="#carousel-exemplo" type="button" data-bs-slide-to="3"></button>
+                            <button data-bs-target="#carousel-exemplo" type="button" data-bs-slide-to="4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre">
+            <div class="padding-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <img src="https://media.istockphoto.com/id/670083108/pt/foto/creative-business-team-laughing-together.webp?s=2048x2048&w=is&k=20&c=aHFxl0o0NV4SI0i6o4US5oqfY33w3kpaObqRhVKlvvA=" alt="Imagem Representativa" class="img-fluid">
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <h3 class="text-center mb-4 border-bottom border-4 border-dark border-solid pb-3">Sobre Nós</h3>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod arcu eget nisi interdum,
+                                vel semper neque aliquam. Fusce varius est vel dolor efficitur, ac consectetur nulla
+                                condimentum. Sed eget sapien id nisi aliquam semper a in quam. Nunc vel feugiat quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, nemo, neque eum in excepturi corporis illum, hic amet impedit enim dicta. Beatae cumque officia a tempore et! Quisquam, aliquam ipsa?
+                            </p>
+                            <p>
+                                Nulla facilisi. Nulla tristique libero vel ex semper, ac bibendum lectus fringilla. Ut
+                                interdum mi et dolor venenatis, vel luctus dui laoreet. Aenean eu lacus nec sem tincidunt
+                                ultrices. Quisque at justo sed massa posuere cursus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="etapas" class="bg-light">
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Etapas de desenvolvimento:</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card text-bg-dark">
+                            <img src="https://media.istockphoto.com/id/867268870/pt/vetorial/light-bulb-idea-to-intelligent-and-creative.webp?s=2048x2048&w=is&k=20&c=RFPJcfgizhYdaTYn48uGp_4TVvlesLjUrZCpXlvpeQo=" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Fase de Concepção</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card text-bg-dark">
+                            <img src="https://thumbs.dreamstime.com/z/calend%C3%A1rio-com-ponto-de-exclama%C3%A7%C3%A3o-lembrete-evento-prazo-ilustra%C3%A7%C3%A3o-desenho-plano-vetorial-vetor-263129313.jpg?w=768" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Desenvolvimento do Projeto</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="card text-bg-dark">
+                            <img src="https://png.pngtree.com/png-clipart/20190118/ourlarge/pngtree-money-financial-money-bag-hand-drawn-money-bag-treasury-financial-png-image_451650.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Valor do Projeto</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contato">
+            <div class="padding-top">
+                <h2 class="text-center mb-4">Contatos:</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <h3>Fale conosco:</h3>
+                            <div>
+                                <img src="imagens/logog.png">
+                                <a href="mailto:">lgmoveisxyz123@gmail.com</a>
+                            </div>
+                            <div>
+                                <img src="imagens/logog.png">
+                                <a href="mailto:">lgmoveisxyz123@gmail.com</a>
+                            </div>
+                            <div>
+                                <img src="imagens/logot.png">
+                                <a href="tel">Telefone: (62) 9000-0000</a>
+                            </div>
+                            <div>
+                                <img src="imagens/logot.png">
+                                <a href="tel">Telefone: (62) 1234-5678</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <h3>Redes Sociais:</h3>
+                            <div>
+                                <img src="imagens/logoi.png">
+                                <a href="tel">Telefone: (62) 9000-0000</a>
+                            </div>
+                            <div>
+                                <img src="imagens/logow.png">
+                                <a href="tel">Telefone: (62) 9000-0000</a>
+                            </div>  
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <h3>Trabalhe conosco: </h3>
+                            <div>
+                                <a href="mailto:">lgmoveisjobssxyz123@gmail.com</a>
+                            </div>
+                            <div>
+                                <a href="tel">(62) 0000-0000 </a>
+                            </div>
+                            <div>
+                                Rua ABC - Goiânia-GO
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
